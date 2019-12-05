@@ -1,5 +1,6 @@
 # Application Symfony Todolist
 ## Install Symfony version '4.x.x'
+__Terminal__: ```composer create-project symfony/website-skeleton my_project_name "4.4.*"```
 # Mémo cmd line
 __Terminal__ : ```composer create-project symfony/website-skeleton my_project_name```
 ## Procédure d'installation
@@ -24,3 +25,10 @@ La relation se fera à partir de l'entité Todo, avec une propriété _category_
 1. ```bin/console make:migration``` Création du fichier de migration (code SQL)  
 2. Exécuter la migration ```bin/console doctrine:migration:migrate```-> création des tables Todo et Categroy dans my SQL
 
+## GIT COMMIT
+1. git add
+2. git commit -m "Todo application install config database"
+
+## Fixtures
+tester l'insertion de données dans les tables
+Installer : ```composer require orm-fixtures --dev```
